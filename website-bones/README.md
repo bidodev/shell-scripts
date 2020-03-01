@@ -23,17 +23,17 @@ After download it on your machine, plese f the instructions to use the Script.
 
 </details>
 
-> The script will generate the beyhond structure and open **VISUAL CODE STUDIO** if you have it on your machine.
+.
 
-### Created Folders
-> The follow structure will be created when you execute the script
+### Folders Structure Tree
+> The script will generate the following folder structure and open **VISUAL CODE STUDIO** at the end if you have it on your machine
 
 ![](./img/folders.png) 
 
->>Inside the SASS folder the behyond structure folder and files tree will be created.
+**Inside the SASS folder the following structure will be created.**
 
 ```
-sass/  #The follow SASS pattern folders and respectives files will be created.
+sass/  
 |
 |– base/
 |   |– _reset.scss       # Reset/normalize
