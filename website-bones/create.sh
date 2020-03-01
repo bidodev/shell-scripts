@@ -1,5 +1,6 @@
 #!/bin/bash
 
+##Define the sleep timers.
 short_timer=0.1
 medium_timer=1
 long_timer=2

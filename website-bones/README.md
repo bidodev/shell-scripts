@@ -1,5 +1,7 @@
 # Script Purpose
-> This script will create the bones structure for your Website.
+1. Create the basic structure folder for your Website.
+2. This script will also create the structure for SASS [The 7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern)
+> Basically, you have all your partials stuffed into 7 different folders, and a single file at the root level (usually named main.scss) which imports them all to be compiled into a CSS stylesheet.
  
 ## Usage
 
