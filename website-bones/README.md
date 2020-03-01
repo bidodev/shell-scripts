@@ -1,32 +1,38 @@
 # Script Porpouse
 > This script will create the bones structure for your Website.
  
-## How to Use
-> chmod +x create.sh
-./create.sh
-The script will ask for the name of the directory that you want.
+## Usage
 
->> The script will generate the beyhond structure and open VISUAL CODE STUDIO if you have it on your machine.
+After download it on your machine, plese f the instructions to use the Script.
+
+<details><summary><b>Show instructions</b></summary>
+
+1. Give the necessary permissions for the script:
+
+    ```
+    $ chmod +x create.sh
+    ```
+
+2. Run the Script:
+
+    ```
+    $ ./create.sh
+    ```
+
+3. The Script will ask for the name of your Directory
+
+</details>
+
+> The script will generate the beyhond structure and open **VISUAL CODE STUDIO** if you have it on your machine.
 
 ### Created Folders
 > The follow structure will be created when you execute the script
 
+![](./img/folders.png) 
+
+>>Inside the SASS folder the behyond structure folder and files tree will be created.
+
 ```
-index.html #A basic HTML file with the base HTML structure will be created.
-|
-|
-html/  #Empty folder for HTML files
-|
-|
-css/   #Empty folder CSS files
-|
-|
-img/   #Empty folder for img
-|
-|
-js     #Empty folder for our JS files.
-|
-|
 sass/  #The follow SASS pattern folders and respectives files will be created.
 |
 |– base/
