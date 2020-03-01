@@ -1,3 +1,9 @@
+#!/bin/bash
+
+short_timer=0.1
+medium_timer=1
+long_timer=2
+
 #basic website structure folders
 site_folders=("css" "html" "img" "js" "sass")
 
@@ -20,7 +26,7 @@ if [ ! -d "$dirname" ]; then
 
     echo "Directory $dirname doesn't exist. Creating now..."
     mkdir ./$dirname
-    sleep 1
+    sleep $medium_timer
 
     echo "Directory $dirname created"
     cd $dirname
@@ -38,14 +44,14 @@ if [ ! -d "$dirname" ]; then
   <body></body>
 </html>'
     } >> index.html
-    sleep 1
+    sleep $medium_timer
     echo "Index HTML created"
 
     echo "Creating basic structure folders..."
     for i in "${site_folders[@]}"; do
         mkdir "$i"
         echo "Creating directory $i..."
-        sleep 1
+        sleep $short_timer
         echo "Directory $i created"
     done
 
@@ -56,7 +62,7 @@ if [ ! -d "$dirname" ]; then
         echo "Creating directory $folder..."
         mkdir "$folder"
 
-        sleep 0.2
+        sleep $short_timer
         echo "Directory $folder created"
 
         cd $folder
@@ -64,7 +70,7 @@ if [ ! -d "$dirname" ]; then
         for file in "${!files}"; do
             echo "Creating file $file..."
             touch "$file"
-            sleep 0.2
+            sleep $short_timer
             echo "File $file created"
         done
         cd ..
@@ -73,7 +79,7 @@ if [ ! -d "$dirname" ]; then
     #create shame file
     touch _shame.scss
 
-    sleep 2
+    sleep $long_timer
     echo "SASS pattern folders and files created"
 
     ##Obs we have to create a loop for this.
@@ -110,11 +116,12 @@ if [ ! -d "$dirname" ]; then
         echo ''
         echo '@import "./shame";'
     } >> main.scss
-    sleep 2
-    echo "Base Website structure built with sucess..."
+    sleep $long_timer
+    echo "Base Website structure built with sucess"
     cd ..
-    echo "Opening Visual Studio..."
-    code .
+
+    echo "Launching Visual Studio..."
+    code . && echo "Visual Studio Launched" || echo "Seems you don't have Visual Studio installed."
 
 else
     echo "Directory $dirname already exists"
