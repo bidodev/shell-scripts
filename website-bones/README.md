@@ -1,13 +1,13 @@
-# Script Porpouse
+# Script Purpose
 > This script will create the bones structure for your Website.
  
 ## Usage
 
-After download it on your machine, plese f the instructions to use the Script.
+After download it on your machine, plese follow the instructions to use the Script.
 
 <details><summary><b>Show instructions</b></summary>
 
-1. Give the necessary permissions for the script:
+1. Give the necessary permissions to run the script:
 
     ```
     $ chmod +x create.sh
@@ -21,9 +21,9 @@ After download it on your machine, plese f the instructions to use the Script.
 
 3. The Script will ask for the name of your Directory
 
-</details>
+4. .. and here we go!
 
-.
+</details>
 
 ### Folders Structure Tree
 > The script will generate the following folder structure and open **VISUAL CODE STUDIO** at the end if you have it on your machine
